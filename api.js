@@ -58,7 +58,7 @@ function hex_to_ascii(str1)
 	for (var n = 0; n < hex.length; n += 2) {
 		str += String.fromCharCode(parseInt(hex.substr(n, 2), 16));
 	}
-	return str;
+	return str.replace(/[^\x20-\x7E]/g, '');
  }
 
 // check if value is undefined, and replace it with a default value
@@ -316,7 +316,7 @@ AirtouchAPI.prototype.decode_groups_status = function(data) {
 AirtouchAPI.prototype.decode_sys_details = function(data) {
 	let strData = data.toString("hex");
 	for (i = 0; i < 15; i++) { //16 max group names
-		zoneName = hex_to_ascii(strData.substr(268 + i*16, 16)).replace(/[^\x20-\x7E]/g, '');
+		zoneName = hex_to_ascii(strData.substr(268 + i*16, 16));
 		this.zoneNames["Zone " + i] = zoneName;
 	};
 };

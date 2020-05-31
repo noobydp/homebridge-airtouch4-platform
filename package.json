@@ -1,18 +1,19 @@
 {
-  "name": "homebridge-airtouch4-platform",
-  "version": "0.1.4",
+  "name": "homebridge-airtouch4-platform-dp",
+  "version": "0.1.5",
   "description": "Plugin for homebridge to connect to Airtouch4 AC controller",
   "main": "index.js",
   "keywords": [
     "homebridge-plugin",
-    "airtouch",
-    "air conditioner"
+    "airtouch4",
+    "air conditioner",
+    "homebridge"
   ],
-  "author": "Marian Mihailescu <mihailescu2m@gmail.com>",
+  "author": "Marian Mihailescu <mihailescu2m@gmail.com> modified by noobyDP",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mihailescu2m/homebridge-airtouch4-platform.git"
+    "url": "git+https://github.com/noobydp/homebridge-airtouch4-platform-dp.git"
   },
   "engines": {
     "homebridge": ">=0.2.0",
@@ -23,9 +24,9 @@
     "fakegato-history": "^0.5.6"
   },
   "bugs": {
-    "url": "https://github.com/mihailescu2m/homebridge-airtouch4-platform/issues"
+    "url": "https://github.com/noobydp/homebridge-airtouch4-platform-dp/issues"
   },
-  "homepage": "https://github.com/mihailescu2m/homebridge-airtouch4-platform#readme",
+  "homepage": "https://github.com/noobydp/homebridge-airtouch4-platform-dp#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   }

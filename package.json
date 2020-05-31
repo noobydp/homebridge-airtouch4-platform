@@ -1,6 +1,6 @@
 {
   "name": "homebridge-airtouch4-platform-dp",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Plugin for homebridge to connect to Airtouch4 AC controller",
   "main": "index.js",
   "keywords": [
